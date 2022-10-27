@@ -1,0 +1,6 @@
+/home/hpa/Desktop/ras_pi/mypg_ethswbox/ethswbox/build/fapi-mdio-c22-write 99 0 0x0 0x7040
+/home/hpa/Desktop/ras_pi/mypg_ethswbox/ethswbox/build/fapi-mdio-c22-write 99 0 0x0 0x3040
+sleep 2.7
+/home/hpa/Desktop/ras_pi/mypg_ethswbox/ethswbox/build/fapi-mdio-c22-write 99 0 0x0 0x7040
+exit
+

@@ -1,0 +1,61 @@
+def IXIA_CONFIG():
+    global IXIA_IP
+    IXIA_IP = "192.168.88.88"
+    global MasterSlave
+    ### hawk cableplug last setting
+    #MasterSlave = ['portSlave']
+    
+    ### hawk powercycle first setting
+    MasterSlave = ['portMaster','portSlave']
+    
+    global Portspeeds
+    ### hawk cableplug last setting
+    #Portspeeds = ['speed2500']
+    
+    ### hawk powercycle first setting
+    Portspeeds = ['speed2500','speed1000']
+    
+    #Portspeeds = ['speed2500']
+    
+def POWERSWITCH_CONFIG():
+    global host_ip
+    host_ip = '192.168.88.66'
+    global username
+    username = 'teladmin'
+    global password
+    password = '123456'
+    global port
+    port = '05'
+
+def CABLESWITCH_CONFIG():
+    global ArduinoIP
+    ArduinoIP = "192.168.88.103"
+    global ArduinoIP2
+    ArduinoIP2 = "192.168.88.104"
+    global ArduinoIP3
+    ArduinoIP3 = "192.168.88.153"
+    global ArduinoIP4
+    ArduinoIP4 = "192.168.88.154"
+    global RasPiIP
+    RasPiIP = "192.168.88.82"
+    global CSports
+    ### hawk cableplug last setting
+    ### CSports = [8]
+    ### hawk powercycle first setting
+    CSports = [1,8]
+    global CSports_Forwarding
+    ### it is interation 
+    CSports_Forwarding = [1,2,3,4,5,6,7,8]
+    #CSports_Forwarding = [8]
+
+def default_register():
+    global register
+    register = [["0x0", "0x0", "0x1", "0x2", "0x3", "0x4", "0x5", "0x6", "0x7", "0x8", "0x9", "0xa", "0xd", "0xe", "0xf", "0x11", "0x13", "0x14", "0x15","0x18", "0x19", "0x1a", "0x1b", "0x1e"]
+                ]
+
+    
+def nomal_variable():
+    global testtimes
+    testtimes = 2
+    global debug_flag
+    debug_flag = 1
